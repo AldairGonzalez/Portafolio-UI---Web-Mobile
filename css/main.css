@@ -1,0 +1,238 @@
+.button{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--desktop-buttons-pagination-medium-text-font-weight);
+    font-size: var(--desktop-buttons-pagination-medium-text-font-size);
+    letter-spacing: var(--desktop-buttons-pagination-medium-text-letter-spacing);
+    line-height: var(--desktop-buttons-pagination-medium-text-line-height);
+    font-style: var(--desktop-buttons-pagination-medium-text-font-style);
+    white-space: nowrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px 17px;
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card__metadata{
+    display: flex;
+    gap:28px;
+}
+
+.card__title{
+    width: 100%;
+    height: auto;
+}
+
+.card__title h5{
+    color: var(--dark);
+    font-weight: var(--desktop-heading-h5-font-weight);
+    font-size: var(--desktop-heading-h5-font-size);
+    letter-spacing: var(--desktop-heading-h5-letter-spacing);
+    line-height: var(--desktop-heading-h5-line-height);
+    font-style: var(--desktop-heading-h5-font-style);
+    word-wrap: break-word;
+}
+
+.content
+{
+    padding:0px 148px;
+}
+
+.posts__cards
+{
+    display: flex;
+    gap: 20px;
+}
+
+.card__date, .card__separator, .card__tags{
+    color: var(--dark);
+    font-weight: var(--desktop-body-medium-text-regular-font-weight);
+    font-size: var(--desktop-body-medium-text-regular-font-size);
+    letter-spacing: var(--desktop-body-medium-text-regular-letter-spacing);
+    line-height: var(--desktop-body-medium-text-regular-line-height);
+    font-style: var(--desktop-body-medium-text-regular-font-style);
+}
+
+.hero{
+    padding-top: 126px;
+    padding-bottom: 60px;
+}
+
+.hero__button{
+    display: inline-flex;
+    background-color: var(--primary);
+    border-radius: 2px;
+    padding: 13px 20px;
+}
+
+.hero__container{
+    display: flex;
+    gap: 116px;
+    margin-bottom: 22px;
+}
+
+.hero__image{
+    position: relative;
+}
+
+.hero__sombra{
+    position: absolute;
+    width: 243px; 
+    height: 243px; 
+    top: 13px;
+    right: 6px; 
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.hero__sombra,
+.posts, .posts__header{
+    background-color: var(--light-blue);
+}
+
+.hero__info{
+    padding-top: 22px;
+}
+
+.card__text, .hero__text, .hero__title, .post__title{
+    color: var(--dark);
+}
+
+.card__text, .hero__text{
+    font-weight: var(--desktop-body-normal-text-regular-font-weight);
+    font-size: var(--desktop-body-normal-text-regular-font-size);
+    letter-spacing: var(--desktop-body-normal-text-regular-letter-spacing);
+    line-height: var(--desktop-body-normal-text-regular-line-height);
+    font-style: var(--desktop-body-normal-text-regular-font-style);
+}
+
+.hero__title{
+    font-weight: var(--desktop-heading-h1-font-weight);
+    font-size: var(--desktop-heading-h1-font-size);
+    letter-spacing: var(--desktop-heading-h1-letter-spacing);
+    line-height: var(--desktop-heading-h1-line-height);
+    font-style: var(--desktop-heading-h1-font-style);
+    word-wrap: break-word;
+    margin-bottom: 26px; 
+}
+
+.main{
+    width: 100%;
+}
+
+.posts{
+    padding-bottom: 32px;
+}
+
+.posts__header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 2px;
+}
+
+.posts__title{
+    font-weight: var(--desktop-body-large-text-regular-label-font-weight);
+    font-size: var(--desktop-body-large-text-regular-label-font-size);
+    letter-spacing: var(--desktop-body-large-text-regular-label-letter-spacing);
+    line-height: var(--desktop-body-large-text-regular-label-line-height);
+    font-style: var(--desktop-body-large-text-regular-label-font-style);
+}
+
+.posts__viewall{
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: var(--desktop-body-normal-text-regular-font-weight);
+    font-size: var(--desktop-body-normal-text-regular-font-size);
+    letter-spacing: var(--desktop-body-normal-text-regular-letter-spacing);
+    line-height: var(--desktop-body-normal-text-regular-line-height);
+    font-style: var(--desktop-body-normal-text-regular-font-style);
+}
+
+/* Media Querys */
+@media (max-width: 950px) {
+    .hero--mobile {
+        padding-top: 33px ;
+        padding-bottom: 62px ; 
+        position: relative;
+        text-align: center;
+    }
+
+    .hero__container--column {
+        flex-direction: column;
+        gap: 34px;
+        margin-bottom: 25px;
+    }
+
+    .hero__image--order {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__sombra--position{
+        top: 50%;
+        left: 50%;
+        transform: translate(-52%, -45%);
+    }
+
+    .hero__info--column {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__title--margin {
+        margin-bottom: 21px;
+    }
+}
+
+@media (max-width: 615px) {
+    .content {
+        padding: 0px 11px;
+    }
+}
+
+@media (max-width: 375px) {
+    .button--mobile {
+        font-weight: var(--mobile-buttons-pagination-medium-text-font-weight);
+        font-size: var(--mobile-buttons-pagination-medium-text-font-size);
+        letter-spacing: var(--mobile-buttons-pagination-medium-text-letter-spacing);
+        line-height: var(--mobile-buttons-pagination-medium-text-line-height);
+        font-style: var(--mobile-buttons-pagination-medium-text-font-style);
+    }
+
+    .hero__image--mobile img, .hero__sombra--mobile {
+        width: 171px;
+        height: auto;
+    }
+
+    .hero__sombra--mobile{
+        height: 171px;
+    }
+
+    .hero__text--mobile {
+        font-weight: var(--mobile-body-normal-text-regular-font-weight);
+        font-size: var(--mobile-body-normal-text-regular-font-size);
+        letter-spacing: var(--mobile-body-normal-text-regular-letter-spacing);
+        line-height: var(--mobile-body-normal-text-regular-line-height);
+        font-style: var(--mobile-body-normal-text-regular-font-style);
+    }
+
+    .hero__title--mobile {
+        font-weight: var(--mobile-heading-h1-font-weight);
+        font-size: var(--mobile-heading-h1-font-size);
+        letter-spacing: var(--mobile-heading-h1-letter-spacing);
+        line-height: var(--mobile-heading-h1-line-height);
+        font-style: var(--mobile-heading-h1-font-style);
+    }
+}

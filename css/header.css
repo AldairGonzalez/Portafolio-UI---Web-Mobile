@@ -1,0 +1,69 @@
+/* Estilos del encabezado */
+.header{
+    position: sticky;
+    top: 0; 
+    z-index: 100;
+    background-color: var(--white);
+}
+
+.header__container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 27px 59px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    width: 100%; 
+    height: 100%; 
+    gap: 9px; 
+}
+
+.menu__linea{
+    width: 30px; 
+    height: 0px; 
+    border: 1.60px var(--dark) solid
+}
+
+.nav{
+    display: flex;
+    gap: 34px;
+}
+
+.nav__icon{
+    fill: var(--dark);
+}
+
+.nav__link{
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--desktop-buttons-pagination-medium-text-font-size);
+    line-height: var(--desktop-buttons-pagination-medium-text-line-height);
+    font-weight: var(--desktop-buttons-pagination-medium-text-font-weight);
+    font-style: var(--desktop-buttons-pagination-medium-text-font-style);
+    letter-spacing: var(--desktop-buttons-pagination-medium-text-letter-spacing);
+}
+
+.nav__link--mobile-icon{
+    display: none;
+}
+
+
+@media (max-width: 375px){
+    .header__container{
+        padding: 12px 18px;
+    }
+
+    .nav__link{
+        display: none;
+        line-height: 0;
+    }
+
+    .nav__link--mobile-icon{
+        display: block;
+    }
+}
