@@ -23,9 +23,12 @@
 }
 
 .hero__container{
+    margin-bottom: 22px;
+}
+
+.hero__content{
     display: flex;
     gap: 116px;
-    margin-bottom: 22px;
 }
 
 .hero__image{
@@ -62,6 +65,7 @@
     line-height: var(--desktop-heading-h1-line-height);
     font-style: var(--desktop-heading-h1-font-style);
     word-wrap: break-word;
+    padding-right: 62px;
     margin-bottom: 26px; 
 }
 
@@ -170,15 +174,19 @@
 @media (max-width: 950px) {
     /* CSS para la sección de HERO */
     .hero__container--column {
+        margin-bottom: 25px;
+    }
+
+    .hero__content{
         flex-direction: column;
         gap: 34px;
-        margin-bottom: 25px;
     }
 
     .hero__image--order {
         order: -1;
         display: flex;
         justify-content: center;
+        padding-bottom: 9px;
     }
 
     .hero__info--column {
@@ -198,10 +206,11 @@
     .hero__sombra--position{
         top: 50%;
         left: 50%;
-        transform: translate(-52%, -45%);
+        transform: translate(-53%, -47%);
     }
 
     .hero__title--margin {
+        padding-right: 0;
         margin-bottom: 21px;
     }
 
@@ -224,6 +233,11 @@
         letter-spacing: var(--mobile-buttons-pagination-medium-text-letter-spacing);
         line-height: var(--mobile-buttons-pagination-medium-text-line-height);
         font-style: var(--mobile-buttons-pagination-medium-text-font-style);
+    }
+
+    .hero__content{
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .hero__image--mobile img, .hero__sombra--mobile {
@@ -249,6 +263,8 @@
         letter-spacing: var(--mobile-heading-h1-letter-spacing);
         line-height: var(--mobile-heading-h1-line-height);
         font-style: var(--mobile-heading-h1-font-style);
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
 

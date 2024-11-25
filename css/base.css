@@ -153,7 +153,8 @@
     --page-max-width: 1152px;
     --page-min-width: 375px;
     --desktop-padding-content: 148px;
-    --mobile-padding-content: 11px;
+    --mobile-padding-content-left: 12px;
+    --mobile-padding-content-right: 11px;
   }
 
 /* Estilos generales de la página*/
@@ -173,7 +174,7 @@ body{
 
 @media (max-width: 615px) {
     .content {
-        padding-left: var(--mobile-padding-content);
-        padding-right: var(--mobile-padding-content);
+        padding-left: var(--mobile-padding-content-left);
+        padding-right: var(--mobile-padding-content-right);
     }
 }
