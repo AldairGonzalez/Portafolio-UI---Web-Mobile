@@ -152,6 +152,8 @@
 
     --page-max-width: 1152px;
     --page-min-width: 375px;
+    --desktop-padding-content: 148px;
+    --mobile-padding-content: 11px;
   }
 
 /* Estilos generales de la página*/
@@ -161,4 +163,17 @@ body{
     min-width: var(--page-min-width);
     max-width: var(--page-max-width);
     margin: 0 auto;
+}
+
+.content
+{
+    padding-left:var(--desktop-padding-content);
+    padding-right: var(--desktop-padding-content);
+}
+
+@media (max-width: 615px) {
+    .content {
+        padding-left: var(--mobile-padding-content);
+        padding-right: var(--mobile-padding-content);
+    }
 }
