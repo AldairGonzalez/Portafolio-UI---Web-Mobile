@@ -155,7 +155,8 @@
     --page-min-width: 375px;
 
     /* Dimensiones del contenido de la página */
-    --desktop-padding-content: 148px;
+    --desktop-home-padding-content: 148px;
+    --desktop-blog-padding-content: 235px;
 
     /* Variables de la pantalla de Home */
     --desktop-size-photo: 243px;

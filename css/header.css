@@ -35,6 +35,10 @@
     letter-spacing: var(--desktop-buttons-pagination-medium-text-letter-spacing);
 }
 
+.header__nav__link--actived{
+    color: var(--primary);
+}
+
 .header__nav__link__menu {
     display: flex;
     flex-direction: column;
