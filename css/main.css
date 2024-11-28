@@ -1,7 +1,29 @@
-/* CSS para la sección de HERO */
-.button{
-    text-decoration: none;
+/* Estilos Generales */
+.main__content__first,
+.main__content__second,
+.main__content__third{
+    padding-left:var(--desktop-padding-content);
+    padding-right: var(--desktop-padding-content);
+}
+
+/* PAGINA - HOME */
+/* Sección HERO */
+.hero{
+    padding-top: 126px;
+    padding-right: 142px;
+    padding-bottom: 60px;
+}
+
+.hero__button{
+    display: inline-flex;
+    background-color: var(--primary);
+    border-radius: 2px;
+    padding: 8.81px 20.18px;
+}
+
+.hero__button__link{
     color: var(--white);
+    text-decoration: none;
     font-weight: var(--desktop-buttons-pagination-medium-text-font-weight);
     font-size: var(--desktop-buttons-pagination-medium-text-font-size);
     letter-spacing: var(--desktop-buttons-pagination-medium-text-letter-spacing);
@@ -10,55 +32,29 @@
     white-space: nowrap;
 }
 
-.hero{
-    padding-top: 126px;
-    padding-bottom: 60px;
-}
-
-.hero__button{
-    display: inline-flex;
-    background-color: var(--primary);
-    border-radius: 2px;
-    padding: 13px 20px;
+.hero__container,
+.hero__container__content,
+.hero__container__image{
+    display: flex;
 }
 
 .hero__container{
+    gap: 116px;
     margin-bottom: 22px;
 }
 
-.hero__content{
-    display: flex;
-    gap: 116px;
+.hero__container__content{
+    flex-direction: column;
+    gap: 26px;
+    padding:22px 0px 17.5px;
 }
 
-.hero__image{
-    position: relative;
+.hero__container__content__title,
+.hero__container__content__description{
+    color: var(--dark);
 }
 
-.hero__info{
-    padding-top: 22px;
-}
-
-.hero__sombra{
-    position: absolute;
-    width: 243px; 
-    height: 243px; 
-    top: 13px;
-    right: 6px; 
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--light-blue);
-}
-
-.hero__text{
-    font-weight: var(--desktop-body-normal-text-regular-font-weight);
-    font-size: var(--desktop-body-normal-text-regular-font-size);
-    letter-spacing: var(--desktop-body-normal-text-regular-letter-spacing);
-    line-height: var(--desktop-body-normal-text-regular-line-height);
-    font-style: var(--desktop-body-normal-text-regular-font-style);
-}
-
-.hero__title{
+.hero__container__content__title{
     font-weight: var(--desktop-heading-h1-font-weight);
     font-size: var(--desktop-heading-h1-font-size);
     letter-spacing: var(--desktop-heading-h1-letter-spacing);
@@ -66,41 +62,9 @@
     font-style: var(--desktop-heading-h1-font-style);
     word-wrap: break-word;
     padding-right: 62px;
-    margin-bottom: 26px; 
 }
 
-.hero__text, .hero__title{
-    color: var(--dark);
-}
-
-
-
-
-/* CSS para la Sección RECENT POSTS */
-.card{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    padding: 24px 17px;
-    background-color: var(--white);
-    border-radius: 4px;
-}
-
-.card__date, .card__separator, .card__tags{
-    color: var(--dark);
-    font-weight: var(--desktop-body-medium-text-regular-font-weight);
-    font-size: var(--desktop-body-medium-text-regular-font-size);
-    letter-spacing: var(--desktop-body-medium-text-regular-letter-spacing);
-    line-height: var(--desktop-body-medium-text-regular-line-height);
-    font-style: var(--desktop-body-medium-text-regular-font-style);
-}
-
-.card__metadata{
-    display: flex;
-    gap:28px;
-}
-
-.card__text{
+.hero__container__content__description{
     font-weight: var(--desktop-body-normal-text-regular-font-weight);
     font-size: var(--desktop-body-normal-text-regular-font-size);
     letter-spacing: var(--desktop-body-normal-text-regular-letter-spacing);
@@ -108,42 +72,70 @@
     font-style: var(--desktop-body-normal-text-regular-font-style);
 }
 
-.card__text, .post__title{
-    color: var(--dark);
+.hero__container__image{
+    justify-content: center;
+    align-items: center;
 }
 
-.card__title{
-    color: var(--dark);
-    font-weight: var(--desktop-heading-h5-font-weight);
-    font-size: var(--desktop-heading-h5-font-size);
-    letter-spacing: var(--desktop-heading-h5-letter-spacing);
-    line-height: var(--desktop-heading-h5-line-height);
-    font-style: var(--desktop-heading-h5-font-style);
-    word-wrap: break-word;
+.hero__container__image__content,
+.hero__container__image img
+{
+    position: relative;
 }
 
-.posts{
-    padding-bottom: 32px;
+.hero__container__image__content img{
+    margin-left: 6px;
+    z-index: 2;
 }
 
-.posts, .posts__header{
+.hero__container__image__content img,
+.hero__container__image__shadow{
+    width: var(--desktop-size-photo);
+    height: var(--desktop-size-photo);
+    border-radius: 50%;
+}
+
+.hero__container__image__shadow{
+    position: absolute;
+    top:10px;
+    right: 6px;
+    /* background-color: var(--light-blue); */
+    background-color: black;
+    z-index: 1;
+}
+
+
+
+
+/* Sección RECENT POSTS */
+.recent__posts{
     background-color: var(--light-blue);
 }
 
-.posts__cards{
+.recent__posts__header,
+.recent__posts__container,
+.recent__posts__container__card,
+.recent__posts__container__card__metadata{
     display: flex;
-    gap: 20px;
 }
 
-.posts__header{
-    display: flex;
+.recent__posts__header{
     justify-content: space-between;
     align-items: center;
     padding-top: 7px;
     padding-bottom: 2px;
 }
 
-.posts__title{
+.recent__posts__header__title,
+.recent__posts__container__card__title,
+.recent__posts__container__card__metadata__date,
+.recent__posts__container__card__metadata__separator,
+.recent__posts__container__card__metadata__tags,
+.recent__posts__container__card__description{
+    color: var(--dark);
+}
+
+.recent__posts__header__title{
     font-weight: var(--desktop-body-large-text-regular-label-font-weight);
     font-size: var(--desktop-body-large-text-regular-label-font-size);
     letter-spacing: var(--desktop-body-large-text-regular-label-letter-spacing);
@@ -151,7 +143,7 @@
     font-style: var(--desktop-body-large-text-regular-label-font-style);
 }
 
-.posts__viewall{
+.recent__posts__header__viewall{
     text-decoration: none;
     color: var(--secondary);
     font-weight: var(--desktop-body-normal-text-regular-font-weight);
@@ -161,22 +153,43 @@
     font-style: var(--desktop-body-normal-text-regular-font-style);
 }
 
-.posts__viewall--visible{
-    display: block;
+.recent__posts__container{
+    gap: 20px;
+    padding-bottom: 32px;
 }
 
-
-
-
-/* CSS para la sección de FEATURED WORKS */
-.content__metadata{
-    display: flex;
-    gap:26px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.recent__posts__container__card{
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 4px;
+    gap: 18px;
+    padding: 30.5px 22px;
 }
 
-.content__p{
+.recent__posts__container__card__title{
+    font-weight: var(--desktop-heading-h5-font-weight);
+    font-size: var(--desktop-heading-h5-font-size);
+    letter-spacing: var(--desktop-heading-h5-letter-spacing);
+    line-height: var(--desktop-heading-h5-line-height);
+    font-style: var(--desktop-heading-h5-font-style);
+    word-wrap: break-word;
+}
+
+.recent__posts__container__card__metadata{
+    gap: 28px;
+}
+
+.recent__posts__container__card__metadata__date,
+.recent__posts__container__card__metadata__separator,
+.recent__posts__container__card__metadata__tags{
+    font-weight: var(--desktop-body-medium-text-regular-font-weight);
+    font-size: var(--desktop-body-medium-text-regular-font-size);
+    letter-spacing: var(--desktop-body-medium-text-regular-letter-spacing);
+    line-height: var(--desktop-body-medium-text-regular-line-height);
+    font-style: var(--desktop-body-medium-text-regular-font-style);
+}
+
+.recent__posts__container__card__description{
     font-weight: var(--desktop-body-normal-text-regular-font-weight);
     font-size: var(--desktop-body-normal-text-regular-font-size);
     letter-spacing: var(--desktop-body-normal-text-regular-letter-spacing);
@@ -184,42 +197,25 @@
     font-style: var(--desktop-body-normal-text-regular-font-style);
 }
 
-.content__title{
-    color: var(--dark);
-    font-weight: var(--desktop-heading-h3-font-weight);
-    font-size: var(--desktop-heading-h3-font-size);
-    letter-spacing: var(--desktop-heading-h3-letter-spacing);
-    line-height: var(--desktop-heading-h3-line-height);
-    font-style: var(--desktop-heading-h3-font-style);
-}
 
-.featured{
+
+
+/* Sección FEATURED WORKS   */
+.featured__works{
     padding-top: 15px;
+    padding-bottom: 64px;
 }
 
-.feature__articles{
-    display: flex;
-    flex-direction: column;
-    gap: 31px;
-}
-
-.featured__card{
-    display: flex;
-    gap: 18px;
-    padding-bottom: 15px;
-    border-bottom: 1px var(--gray) solid;
-}
-
-.featured__header{
+.featured__works__header{
     margin-bottom: 10px;
 }
 
-.featured__img{
-    padding: 12px 0px;
+.featured__works__header__title,
+.featured__works__content__card__content__header__title{
+    color: var(--dark);
 }
 
-.featured__title{
-    color: var(--dark);
+.featured__works__header__title{
     font-weight: var(--desktop-body-large-text-regular-label-font-weight);
     font-size: var(--desktop-body-large-text-regular-label-font-size);
     letter-spacing: var(--desktop-body-large-text-regular-label-letter-spacing);
@@ -227,7 +223,47 @@
     font-style: var(--desktop-body-large-text-regular-label-font-style);
 }
 
-.metadata__date{
+.featured__works__content,
+.featured__works__content__card,
+.featured__works__content__card__content__header__metadata{
+    display: flex;
+}
+
+.featured__works__content{
+    flex-direction: column;
+    gap: 31px;
+}
+
+.featured__works__content__card{
+    gap:18px;
+    padding-bottom: 14px;
+    border-bottom: 1px var(--gray) solid;
+}
+
+.featured__works__content__card__img{
+    padding: 12px 0 5px;
+}
+
+.featured__works__content__card__content__header{
+    margin-bottom: 5px;
+}
+
+.featured__works__content__card__content__header__title{
+    font-weight: var(--desktop-heading-h3-font-weight);
+    font-size: var(--desktop-heading-h3-font-size);
+    letter-spacing: var(--desktop-heading-h3-letter-spacing);
+    line-height: var(--desktop-heading-h3-line-height);
+    font-style: var(--desktop-heading-h3-font-style);
+    margin-bottom: 1px;
+}
+
+.featured__works__content__card__content__header__metadata{
+    gap: 26px;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.featured__works__content__card__content__header__metadata__date{
     background-color: var(--dark-2);
     color: var(--white);
     font-weight: var(--desktop-body-medium-text-black-font-weight);
@@ -237,10 +273,11 @@
     border-radius: 16px;
     padding-left: 10px;
     padding-right: 10px;
-    height: 100%;
+    height: 25px;
+    width: 62px;
 }
 
-.metadata__text{
+.featured__works__content__card__content__header__metadata__text{
     color: var(--light);
     font-weight: var(--desktop-body-large-text-regular-font-weight);
     font-size: var(--desktop-body-large-text-regular-font-size);
@@ -249,94 +286,139 @@
     font-style: var(--desktop-body-large-text-regular-font-style);
 }
 
+.featured__works__content__card__content__description{
+    font-weight: var(--desktop-body-normal-text-regular-font-weight);
+    font-size: var(--desktop-body-normal-text-regular-font-size);
+    letter-spacing: var(--desktop-body-normal-text-regular-letter-spacing);
+    line-height: var(--desktop-body-normal-text-regular-line-height);
+    font-style: var(--desktop-body-normal-text-regular-font-style);
+}
+
 /* Media Querys */
-@media (max-width: 950px) {
-    /* CSS para la sección de HERO */
-    .hero__container--column {
+@media (max-width: 975px) {
+
+    /* PAGINA - HOME */
+    /* Sección HERO */
+    .hero{
+        padding-top: 33px;
+        padding-bottom: 62px;
+        text-align: center;
+    }
+
+    .hero__container{
+        flex-direction: column;
+        gap: 34px;
         margin-bottom: 25px;
     }
 
-    .hero__content{
-        flex-direction: column;
-        gap: 34px;
+    .hero__container__image__content,
+    .hero__container__content{
+        padding: 0;
     }
 
-    .hero__image--order {
-        order: -1;
+    .hero__container__content{
+        gap: 21px;
+        order:2;
+    }
+
+    .hero__container__content__title{
+        padding: 0 20px;
+    }
+
+    .hero__container__content__description{
+        padding: 0 12px;
+    }
+
+    .hero__container__image__content{
         display: flex;
         justify-content: center;
-        padding-bottom: 9px;
+        order:1;
     }
 
-    .hero__info--column {
-        padding-top: 0px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero--mobile {
-        padding-top: 33px ;
-        padding-bottom: 62px ; 
-        position: relative;
-        text-align: center;
-    }
-
-    .hero__sombra--position{
+    .hero__container__image__shadow{
         top: 50%;
         left: 50%;
-        transform: translate(-53%, -47%);
+        transform: translate(-51%, -47%);
     }
 
-    .hero__title--margin {
-        padding-right: 0;
-        margin-bottom: 21px;
+    .hero__container__image__content img{
+        margin-left: 6px;
+        margin-bottom: 13px;
     }
 
 
 
 
-    /* CSS para la Sección RECENT POSTS */
-    .posts__cards--column
-    {
+    /* Sección RECENT POSTS */
+    .recent__posts__header{
+        padding-top: 1px;
+        padding-bottom: 0;
+    }
+
+    .recent__posts__container{
         flex-direction: column;
         gap: 17px;
+        padding-bottom: 37px;
     }
 
 
 
 
-    /* CSS para la sección FEATURED */
-    .featured--mobile{
+    /* Sección FEATURED WORKS */
+    .featured__works{
         padding-top: 3px;
     }
 
-    .featured__header--mobile{
-        margin-bottom: 3px;
-        text-align: center;
-    }
-
-    .featured__img--mobile{
+    .featured__works__header,
+    .featured__works__content__card__img{
         display: flex;
-        padding: 0px;
         justify-content: center;
     }
 
-    .featured__img--mobile img{
-        width: 344px;
+    .featured__works__header{
+        margin-bottom: 3px;
     }
 
-    .featured__card--mobile{
+    .featured__works__content__card{
         flex-direction: column;
         gap: 16px;
-        padding-bottom: 24px;
-        border-bottom: 1px var(--gray) solid;
+    }
+
+    .featured__works__content__card__img{
+        padding: 0;
+    }
+
+    .featured__works__content__card__img img{ 
+        width: 344px;
+        height: 230px;;
+    }
+}
+
+@media (max-width: 615px) {
+
+    /* Estilos Generales */
+    .main__content__first{
+        padding-left: 12px;
+        padding-right: 11px;
+    }
+
+    .main__content__second{
+        padding-left: 11.5px;
+        padding-right: 11.5px;
+    }
+
+    .main__content__third{
+        padding-left: 15px;
+        padding-right: 16px;
     }
 }
 
 @media (max-width: 375px) {
-    /* CSS para la sección de HERO */
-    .button--mobile {
+
+    /* PAGINA - HOME */
+    /* Sección HERO */
+
+    .hero__button{
         font-weight: var(--mobile-buttons-pagination-medium-text-font-weight);
         font-size: var(--mobile-buttons-pagination-medium-text-font-size);
         letter-spacing: var(--mobile-buttons-pagination-medium-text-letter-spacing);
@@ -344,46 +426,15 @@
         font-style: var(--mobile-buttons-pagination-medium-text-font-style);
     }
 
-    .hero__content{
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .hero__image--mobile img, .hero__sombra--mobile {
-        width: 171px;
-        height: auto;
-    }
-
-    .hero__sombra--mobile{
-        height: 171px;
-    }
-
-    .hero__text--mobile {
-        font-weight: var(--mobile-body-normal-text-regular-font-weight);
-        font-size: var(--mobile-body-normal-text-regular-font-size);
-        letter-spacing: var(--mobile-body-normal-text-regular-letter-spacing);
-        line-height: var(--mobile-body-normal-text-regular-line-height);
-        font-style: var(--mobile-body-normal-text-regular-font-style);
-    }
-
-    .hero__title--mobile {
+    .hero__container__content__title{
         font-weight: var(--mobile-heading-h1-font-weight);
         font-size: var(--mobile-heading-h1-font-size);
         letter-spacing: var(--mobile-heading-h1-letter-spacing);
         line-height: var(--mobile-heading-h1-line-height);
         font-style: var(--mobile-heading-h1-font-style);
-        padding-left: 8px;
-        padding-right: 8px;
     }
 
-
-
-
-    /* CSS para la Sección RECENT POSTS */
-    .card__date--mobile, 
-    .card__separator--mobile, 
-    .card__tags--mobile, 
-    .card__text--mobile{
+    .hero__container__content__description{
         font-weight: var(--mobile-body-normal-text-regular-font-weight);
         font-size: var(--mobile-body-normal-text-regular-font-size);
         letter-spacing: var(--mobile-body-normal-text-regular-letter-spacing);
@@ -391,21 +442,70 @@
         font-style: var(--mobile-body-normal-text-regular-font-style);
     }
 
-    .card__title--mobile{
+    .hero__container__image__content img,
+    .hero__container__image__shadow{
+        width: var(--mobile-size-photo);
+        height: var(--mobile-size-photo);
+    }
+
+    .hero__container__image__content img{
+        margin-left: 3.52px;
+        margin-bottom: 9.15px;
+    }
+
+
+
+    /* Sección RECENT POSTS */
+    .recent__posts__header{
+        justify-content: center;
+        padding: 0;
+    }
+
+    .recent__posts__header__title{
+        font-weight: var(--mobile-body-large-text-regular-font-weight);
+        font-size: var(--mobile-body-large-text-regular-font-size);
+        letter-spacing: var(--mobile-body-large-text-regular-letter-spacing);
+        line-height: var(--mobile-body-large-text-regular-line-height);
+        font-style: var(--mobile-body-large-text-regular-font-style);
+    }
+
+    .recent__posts__header__viewall{
+        display: none;
+    }
+
+    .recent__posts__container__card{
+        gap: 11px;
+        padding: 21.5px 25.5px 21.5px 12.5px;
+    }
+
+    .recent__posts__container__card__title{
         font-weight: var(--mobile-heading-h5-font-weight);
         font-size: var(--mobile-heading-h5-font-size);
         letter-spacing: var(--mobile-heading-h5-letter-spacing);
         line-height: var(--mobile-heading-h5-line-height);
         font-style: var(--mobile-heading-h5-font-style);
-        word-wrap: break-word;
     }
 
-    .posts__header--centered{
-        justify-content: center;
-
+    .recent__posts__container__card__metadata__date,
+    .recent__posts__container__card__metadata__separator,
+    .recent__posts__container__card__metadata__tags,
+    .recent__posts__container__card__description{
+        font-weight: var(--mobile-body-normal-text-regular-font-weight);
+        font-size: var(--mobile-body-normal-text-regular-font-size);
+        letter-spacing: var(--mobile-body-normal-text-regular-letter-spacing);
+        line-height: var(--mobile-body-normal-text-regular-line-height);
+        font-style: var(--mobile-body-normal-text-regular-font-style);
     }
 
-    .posts__title--mobile{
+
+
+
+    /* Sección FEATURED WORKS */
+    .featured__works{
+        padding-bottom: 144px;
+    }
+    .featured__works__header__title
+    {
         font-weight: var(--mobile-body-large-text-regular-font-weight);
         font-size: var(--mobile-body-large-text-regular-font-size);
         letter-spacing: var(--mobile-body-large-text-regular-letter-spacing);
@@ -413,23 +513,20 @@
         font-style: var(--mobile-body-large-text-regular-font-style);
     }
 
-    .posts__viewall--visible{
+    .featured__works__content__card{
+        padding-bottom: 23px;
+    }
+
+    .featured__works__content__card--hidden{
         display: none;
     }
 
-
-
-
-    /* CSS para la sección FEATURED */
-    .featured__title--mobile{
-        font-weight: var(--mobile-body-large-text-regular-font-weight);
-        font-size: var(--mobile-body-large-text-regular-font-size);
-        letter-spacing: var(--mobile-body-large-text-regular-letter-spacing);
-        line-height: var(--mobile-body-large-text-regular-line-height);
-        font-style: var(--mobile-body-large-text-regular-font-style);
+    .featured__works__content__card__content__header,
+    .featured__works__content__card__content__header__title{
+        margin:0;
     }
 
-    .content__title--mobile{
+    .featured__works__content__card__content__header__title{
         font-weight: var(--mobile-heading-h4-font-weight);
         font-size: var(--mobile-heading-h4-font-size);
         letter-spacing: var(--mobile-heading-h4-letter-spacing);
@@ -437,11 +534,13 @@
         font-style: var(--mobile-heading-h4-font-style);
     }
 
-    .content__metadata--mobile{
-        gap:21px;
+    .featured__works__content__card__content__header__metadata{
+        gap: 26px;
+        padding: 16px 0 24px;
+        align-items: center;
     }
 
-    .metadata__date--mobile{
+    .featured__works__content__card__content__header__metadata__date{
         font-weight: var(--mobile-body-normal-text-black-font-weight);
         font-size: var(--mobile-body-normal-text-black-font-size);
         font-style: var(--mobile-body-normal-text-black-font-style);
@@ -449,7 +548,8 @@
         padding-right: 12px;
     }
 
-    .metadata__text, .content__p{
+    .featured__works__content__card__content__header__metadata__text,
+    .featured__works__content__card__content__description{
         font-weight: var(--mobile-body-normal-text-regular-font-weight);
         font-size: var(--mobile-body-normal-text-regular-font-size);
         letter-spacing: var(--mobile-body-normal-text-regular-letter-spacing);

@@ -150,11 +150,16 @@
     --mobile-buttons-pagination-medium-text-line-height: 29.3799991607666px;
     --mobile-buttons-pagination-medium-text-font-style: normal;
 
+    /* Dimensiones de la página */
     --page-max-width: 1152px;
     --page-min-width: 375px;
+
+    /* Dimensiones del contenido de la página */
     --desktop-padding-content: 148px;
-    --mobile-padding-content-left: 12px;
-    --mobile-padding-content-right: 11px;
+
+    /* Variables de la pantalla de Home */
+    --desktop-size-photo: 243px;
+    --mobile-size-photo: 170.86px;
   }
 
 /* Estilos generales de la página*/
@@ -164,17 +169,4 @@ body{
     min-width: var(--page-min-width);
     max-width: var(--page-max-width);
     margin: 0 auto;
-}
-
-.content
-{
-    padding-left:var(--desktop-padding-content);
-    padding-right: var(--desktop-padding-content);
-}
-
-@media (max-width: 615px) {
-    .content {
-        padding-left: var(--mobile-padding-content-left);
-        padding-right: var(--mobile-padding-content-right);
-    }
 }
