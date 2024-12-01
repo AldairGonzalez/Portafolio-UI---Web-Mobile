@@ -8,161 +8,165 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Archivos CSS -->
-    <link rel="stylesheet" href="css/base.css">
+
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
-            <!-- Bloque de Navegación -->
-            <nav class="header__nav">
-                <a href="work.html" class="header__nav__link">Works</a>
-                <a href="blog.html" class="header__nav__link">Blog</a>
-                <a href="#" class="header__nav__link">Contact</a>
-                <!-- Botón de menú móvil -->
-                <a href="#" class="header__nav__link header__nav__link--mobile-icon">
-                    <div class="header__nav__link__menu">
-                        <div class="header__nav__link__menu__linea"></div>
-                        <div class="header__nav__link__menu__linea"></div>
-                        <div class="header__nav__link__menu__linea"></div>
-                    </div>
-                </a>
-            </nav>
-        </div>
-    </header>      
-    <main>
-        <!-- Sección Hero -->
-        <section class="home__main__content__hero hero">
+        <nav class="nav">
+            <a href="work.html" class="nav__link text--buttons-pagination-medium-text">Works</a>
+            <a href="blog.html" class="nav__link text--buttons-pagination-medium-text">Blog</a>
+            <a href="#" class="nav__link text--buttons-pagination-medium-text">Contact</a>
+            <!-- Botón de menú móvil -->
+            <a href="#" class="nav__link nav__link--icon-only">
+                <div class="menu">
+                    <div class="menu__linea"></div>
+                    <div class="menu__linea"></div>
+                    <div class="menu__linea"></div>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- Sección HERO -->
+        <section class="container container--home container--hero hero">
             <div class="hero__container">
-                <div class="hero__container__content">
-                    <h1 class="hero__container__content__title">
+                <div class="hero__content">
+                    <h1 class="hero__title text--h1">
                         Hi, I am John,<br/>Creative Technologist
                     </h1>
-                    <p class="hero__container__content__description">
+                    <p class="hero__description text--body-normal-text-regular">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </p>
                 </div>
-                <div class="hero__container__image">
-                    <div class="hero__container__image__content">
-                        <div class="hero__container__image__shadow"></div>
-                        <img src="img/fotoperfil.png" alt="Imagen de Perfíl">
+                <div class="hero__image">
+                    <div class="hero__image-container">
+                        <div class="hero__image-shadow"></div>
+                        <img src="img/fotoperfil.png" alt="Imagen de Perfíl" class="hero__image-img">
                     </div>
                 </div>
             </div>
             <div class="hero__button">
-                <a class="hero__button__link" href="./assets/prado.pdf" download="prado.pdf">Download Resume</a>
+                <a class="hero__button__link text--buttons-pagination-medium-text" href="./assets/Maestria.pdf" download="Maestria.pdf">Download Resume</a>
             </div>
         </section>
 
-        <!-- Sección Recent Posts -->
-        <section class="recent__posts">
-            <div class="home__main__content__recentposts">
-                <div class="recent__posts__header">
-                    <h2 class="recent__posts__header__title">Recent posts</h2>
-                    <a class="recent__posts__header__viewall" href="#" aria-label="View all posts">View all</a>
+        <!-- Sección RECENT POSTS -->
+         <section class="recent-posts">
+            <div class="container container--home container--recentposts">
+                <div class="recent-posts__header">
+                    <h2 class="recent-posts__title">Recent posts</h2>
+                    <a class="recent-posts__viewall recent-posts__viewall--hidden text--body-normal-text-regular" href="#" aria-label="View all posts">View all</a>
                 </div>
-                <div class="recent__posts__container">
-                    <article class="recent__posts__container__card">
-                        <h5 class="recent__posts__container__card__title">Making a design system from scratch</h5>
-                        <div class="recent__posts__container__card__metadata">
-                            <span class="recent__posts__container__card__metadata__date">12 Feb 2020</span>
-                            <span class="recent__posts__container__card__metadata__separator">|</span>
-                            <span class="recent__posts__container__card__metadata__tags">Design, Pattern</span>
+                <div class="recent-posts__content">
+                    <article class="card-post">
+                        <h5 class="card-post__title text--h5">Making a design system from scratch</h5>
+                        <div class="card-post__metadata">
+                            <span class="card-post__metadata-text">12 Feb 2020</span>
+                            <span class="card-post__metadata-text">|</span>
+                            <span class="card-post__metadata-text">Design, Pattern</span>
                         </div>
-                        <p class="recent__posts__container__card__description">
+                        <p class="card-post__description text--body-normal-text-regular">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </article>
-                    <article class="recent__posts__container__card">
-                        <h5 class="recent__posts__container__card__title">Creating pixel perfect icons in Figma</h5>
-                        <div class="recent__posts__container__card__metadata">
-                            <span class="recent__posts__container__card__metadata__date">12 Feb 2020</span>
-                            <span class="recent__posts__container__card__metadata__separator">|</span>
-                            <span class="recent__posts__container__card__metadata__tags">Figma, Icon Design</span>
+                    <article class="card-post">
+                        <h5 class="card-post__title text--h5">Creating pixel perfect icons in Figma</h5>
+                        <div class="card-post__metadata">
+                            <span class="card-post__metadata-text">12 Feb 2020</span>
+                            <span class="card-post__metadata-text">|</span>
+                            <span class="card-post__metadata-text">Figma, Icon Design</span>
                         </div>
-                        <p class="recent__posts__container__card__description">
+                        <p class="card-post__description text--body-normal-text-regular">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </article>
                 </div>
-            </div>
-        </section>
-
-        <!-- Sección Featured Works -->
-         <section class="home__main__content__featured featured__works">
-            <div class="featured__works__header">
-                <h2 class="featured__works__header__title">Featured works</h2>
-            </div>
-            <div class="featured__works__content">
-                <article class="featured__works__content__card">
-                    <div class="featured__works__content__card__img">
-                        <img src="img/designin_dashboard.png" alt="Imagen de Designing Dashboards">
-                    </div>
-                    <div class="featured__works__content__card__content">
-                        <div class="featured__works__content__card__content__header">
-                            <h3 class="featured__works__content__card__content__header__title">Designing Dashboards</h3>
-                            <div class="featured__works__content__card__content__header__metadata">
-                                <span class="featured__works__content__card__content__header__metadata__date">2020</span>
-                                <span class="featured__works__content__card__content__header__metadata__text">Dashboard</span>
-                            </div>
-                        </div>
-                        <p class="featured__works__content__card__content__description">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </p>
-                    </div>
-                </article>
-                <article class="featured__works__content__card featured__works__content__card--hidden">
-                    <div class="featured__works__content__card__img">
-                        <img src="img/vibrant.png" alt="Imagen de Vibrant Portraits of 2020">
-                    </div>
-                    <div class="featured__works__content__card__content">
-                        <div class="featured__works__content__card__content__header">
-                            <h3 class="featured__works__content__card__content__header__title">Vibrant Portraits of 2020</h3>
-                            <div class="featured__works__content__card__content__header__metadata">
-                                <span class="featured__works__content__card__content__header__metadata__date">2018</span>
-                                <span class="featured__works__content__card__content__header__metadata__text">Illustration</span>
-                            </div>
-                        </div>
-                        <p class="featured__works__content__card__content__description">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </p>
-                    </div>
-                </article>
-                <article class="featured__works__content__card featured__works__content__card--hidden">
-                    <div class="featured__works__content__card__img">
-                        <img src="img/malayalam.png" alt="36 Days of Malayalam type">
-                    </div>
-                    <div class="featured__works__content__card__content">
-                        <div class="featured__works__content__card__content__header">
-                            <h3 class="featured__works__content__card__content__header__title">36 Days of Malayalam type</h3>
-                            <div class="featured__works__content__card__content__header__metadata">
-                                <span class="featured__works__content__card__content__header__metadata__date">2018</span>
-                                <span class="featured__works__content__card__content__header__metadata__text">Typography</span>
-                            </div>
-                        </div>
-                        <p class="featured__works__content__card__content__description">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </p>
-                    </div>
-                </article>
             </div>
          </section>
+
+         <!-- Sección Featured-Works -->
+          <section class="container container--home container--featured featured">
+            <div class="featured__header">
+                <h2 class="featured__title">Featured works</h2>
+            </div>
+            <div class="featured__content">
+                <article class="card">
+                    <div class="card__img">
+                        <img src="img/designin_dashboard.png" alt="Imagen de Designing Dashboards">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content-header">
+                            <h3 class="card__content-title">
+                                <a class="card__content-link" href="workdetail.html" title="Learn more about Designing Dashboards">Designing Dashboards</a>
+                            </h3>
+                            <div class="card__content-metadata">
+                                <span class="card__content-metadata-date text--body-medium-text-black">2020</span>
+                                <span class="card__content-metadata-text">Dashboard</span>
+                            </div>
+                        </div>
+                        <p class="card__content-description text--body-normal-text-regular">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </article>
+                <article class="card card--hidden">
+                    <div class="card__img">
+                        <img src="img/vibrant.png" alt="Imagen de Vibrant Portraits of 2020">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content-header">
+                            <h3 class="card__content-title">
+                                <a class="card__content-link" href="#" title="Learn more about Vibrant Portraits of 2020">Vibrant Portraits of 2020</a>
+                            </h3>
+                            <div class="card__content-metadata">
+                                <span class="card__content-metadata-date text--body-medium-text-black">2018</span>
+                                <span class="card__content-metadata-text">Illustration</span>
+                            </div>
+                        </div>
+                        <p class="card__content-description text--body-normal-text-regular">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </article>
+                <article class="card card--hidden">
+                    <div class="card__img">
+                        <img src="img/malayalam.png" alt="Imagen de 36 Days of Malayalam type">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content-header">
+                            <h3 class="card__content-title">
+                                <a class="card__content-link" href="#" title="Learn more about 36 Days of Malayalam type">36 Days of Malayalam type</a>
+                            </h3>
+                            <div class="card__content-metadata">
+                                <span class="card__content-metadata-date text--body-medium-text-black">2018</span>
+                                <span class="card__content-metadata-text">Typography</span>
+                            </div>
+                        </div>
+                        <p class="card__content-description text--body-normal-text-regular">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </article>
+            </div>
+          </section>
     </main>
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__container__icons">
+            <div class="footer__icons">
                 <img src="icons/fb.svg" alt="Ícono de Facebook">
                 <img src="icons/insta.svg" alt="Ícono de Instagram">
                 <img src="icons/Group.svg" alt="Ícono de Twitter">
                 <img src="icons/Linkedin.svg" alt="Ícono de LinkedIn">
             </div>
-            <div class="footer__container__reserved">
-                <span class="footer__container__reserved__text">Copyright ©2020 All rights reserved</span>
+            <div class="footer__copyright">
+                <span class="text--body-small-text-regular">Copyright ©2020 All rights reserved</span>
             </div>
         </div>
-    </footer>
+    </footer> 
 </body>
 </html>
