@@ -1,80 +1,60 @@
-/* =========================== */
-/* Estilos del encabezado      */
-/* =========================== */
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--white);
-}
-
-.header__container {
+.header,
+.nav,
+.menu{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 27px 60px;
 }
 
-/* =========================== */
-/* Estilos de la navegación    */
-/* =========================== */
-.header__nav {
-    display: flex;
-    gap: 33px;
+.header{
+    flex-direction: row-reverse;
+    padding: 27px 59px;
+    height: 84px;
 }
 
-.header__nav__link {
-    text-decoration: none;
-    color: var(--black);
-
-    /* Propiedades tipográficas */
-    font-weight: var(--desktop-buttons-pagination-medium-text-font-weight);
-    font-size: var(--desktop-buttons-pagination-medium-text-font-size);
-    font-style: var(--desktop-buttons-pagination-medium-text-font-style);
-    line-height: var(--desktop-buttons-pagination-medium-text-line-height);
-    letter-spacing: var(--desktop-buttons-pagination-medium-text-letter-spacing);
+.nav{
+    gap: 34px;
 }
 
-.header__nav__link--actived{
-    color: var(--primary);
-}
+    .nav__link{
+        text-decoration: none;
+        color: var(--black);
+    }
 
-.header__nav__link__menu {
-    display: flex;
+    .nav__link--actived{
+        color: var(--primary);
+    }
+
+    .nav__link--icon-only{
+        display: none;
+    }
+
+.menu{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    height: 100%;
     gap: 6px;
 }
 
-.header__nav__link__menu__linea {
-    width: 30px;
-    height: 0;
-    border: 1.6px solid var(--dark); 
-}
-
-/* =========================== */
-/* Modificadores               */
-/* =========================== */
-.header__nav__link--mobile-icon {
-    display: none;
-}
-
-/* =========================== */
-/* Estilos responsivos         */
-/* =========================== */
-@media (max-width: 375px) {
-    .header__container {
-        padding: 20px 18px 12px;
+    .menu__linea{
+        width: 30px;
+        height: 0;
+        border: 1.6px solid var(--dark); 
     }
 
-    .header__nav__link {
+
+
+@media (max-width: 375px) {
+    .header{
+        padding: 20px 18px 12px;
+        height: 50px;
+    }
+
+    .nav__link{
         display: none;
     }
 
-    .header__nav__link--mobile-icon {
+    .nav__link--icon-only{
         display: block;
     }
+
 }
