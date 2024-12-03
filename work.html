@@ -12,17 +12,18 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/featured-works.css">
+    <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="blog.html" class="nav__link text--buttons-pagination-medium-text">Blog</a>
-            <a href="work.html" class="nav__link nav__link--actived text--buttons-pagination-medium-text">Works</a>
-            <a href="#" class="nav__link text--buttons-pagination-medium-text">Contact</a>
+            <a href="work.html" class="nav__link nav__link--actived" aria-current="page">Works</a>
+            <a href="blog.html" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Contact</a>
             <!-- Botón de menú móvil -->
-            <a href="#" class="nav__link nav__link--icon-only">
+            <a href="#" class="nav__link nav__link--icon-only" aria-label="Open menu" role="button">
                 <div class="menu">
                     <div class="menu__linea"></div>
                     <div class="menu__linea"></div>
@@ -37,95 +38,95 @@
             <div class="work__content">
                 <article class="card card--work">
                     <div class="card__img">
-                        <img src="img/designin_dashboard.png" alt="Imagen de Designing Dashboards">
+                        <img src="assets/img/designin_dashboard.png" alt="Imagen de Designing Dashboards" aria-label="Imagen de Designing Dashboards" loading="lazy">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-header">
+                        <header class="card__content-header">
                             <h3 class="card__content-title">
                                 <a class="card__content-link" href="workdetail.html" title="Learn more about Designing Dashboards">Designing Dashboards</a>
                             </h3>
                             <div class="card__content-metadata">
-                                <span class="card__content-metadata-date text--body-medium-text-black">2020</span>
+                                <span class="card__content-metadata-date">2020</span>
                                 <span class="card__content-metadata-text">Dashboard</span>
                             </div>
-                        </div>
-                        <p class="card__content-description text--body-normal-text-regular">
+                        </header>
+                        <p class="card__content-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </article>
                 <article class="card card--work card--hidden">
                     <div class="card__img">
-                        <img src="img/vibrant.png" alt="Imagen de Vibrant Portraits of 2020">
+                        <img src="assets/img/vibrant.png" alt="Imagen de Vibrant Portraits of 2020" aria-label="Imagen de Vibrant Portraits of 2020" loading="lazy">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-header">
+                        <header class="card__content-header">
                             <h3 class="card__content-title">
                                 <a class="card__content-link" href="#" title="Learn more about Vibrant Portraits of 2020">Vibrant Portraits of 2020</a>
                             </h3>
                             <div class="card__content-metadata">
-                                <span class="card__content-metadata-date text--body-medium-text-black">2018</span>
+                                <span class="card__content-metadata-date">2018</span>
                                 <span class="card__content-metadata-text">Illustration</span>
                             </div>
-                        </div>
-                        <p class="card__content-description text--body-normal-text-regular">
+                        </header>
+                        <p class="card__content-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </article>
                 <article class="card card--work card--hidden">
                     <div class="card__img">
-                        <img src="img/malayalam.png" alt="Imagen de 36 Days of Malayalam type">
+                        <img src="assets/img/malayalam.png" alt="Imagen de 36 Days of Malayalam type" aria-label="Imagen de 36 Days of Malayalam type" loading="lazy">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-header">
+                        <header class="card__content-header">
                             <h3 class="card__content-title">
                                 <a class="card__content-link" href="#" title="Learn more about 36 Days of Malayalam type">36 Days of Malayalam type</a>
                             </h3>
                             <div class="card__content-metadata">
-                                <span class="card__content-metadata-date text--body-medium-text-black">2018</span>
+                                <span class="card__content-metadata-date">2018</span>
                                 <span class="card__content-metadata-text">Typography</span>
                             </div>
-                        </div>
-                        <p class="card__content-description text--body-normal-text-regular">
+                        </header>
+                        <p class="card__content-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </article>
                 <article class="card card--work card--hidden">
                     <div class="card__img">
-                        <img src="img/components.png" alt="Imagen de Components">
+                        <img src="assets/img/components.png" alt="Imagen de Components" aria-label="Imagen de Components" loading="lazy">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-header">
+                        <header class="card__content-header">
                             <h3 class="card__content-title">
                                 <a class="card__content-link" href="#" title="Learn more about Components">Components</a>
                             </h3>
                             <div class="card__content-metadata">
-                                <span class="card__content-metadata-date text--body-medium-text-black">2018</span>
+                                <span class="card__content-metadata-date">2018</span>
                                 <span class="card__content-metadata-text">Components, Design</span>
                             </div>
-                        </div>
-                        <p class="card__content-description text--body-normal-text-regular">
+                        </header>
+                        <p class="card__content-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </article>
                 <article class="card card--work card--show">
                     <div class="card__img">
-                        <img src="img/dashboard2.png" alt="Imagen de Designing Dashboards">
+                        <img src="assets/img/dashboard2.png" alt="Imagen de Designing Dashboards" aria-label="Imagen de Designing Dashboards" loading="lazy">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-header">
+                        <header class="card__content-header">
                             <h3 class="card__content-title">
                                 <a class="card__content-link" href="#" title="Learn more about Designing Dashboards">Designing Dashboards</a>
                             </h3>
                             <div class="card__content-metadata">
-                                <span class="card__content-metadata-date text--body-medium-text-black">2020</span>
+                                <span class="card__content-metadata-date">2020</span>
                                 <span class="card__content-metadata-text">Website</span>
                             </div>
-                        </div>
-                        <p class="card__content-description text--body-normal-text-regular">
+                        </header>
+                        <p class="card__content-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
@@ -136,13 +137,13 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__icons">
-                <img src="icons/fb.svg" alt="Ícono de Facebook">
-                <img src="icons/insta.svg" alt="Ícono de Instagram">
-                <img src="icons/Group.svg" alt="Ícono de Twitter">
-                <img src="icons/Linkedin.svg" alt="Ícono de LinkedIn">
+                <img src="icons/fb.svg" alt="Ícono de Facebook" aria-label="Facebook">
+                <img src="icons/insta.svg" alt="Ícono de Instagram" aria-label="Instagram">
+                <img src="icons/Group.svg" alt="Ícono de Twitter" aria-label="Twitter">
+                <img src="icons/Linkedin.svg" alt="Ícono de LinkedIn" aria-label="LinkedIn">
             </div>
             <div class="footer__copyright">
-                <span class="text--body-small-text-regular">Copyright ©2020 All rights reserved</span>
+                <span class="footer__copyright-text">Copyright ©2020 All rights reserved</span>
             </div>
         </div>
     </footer> 

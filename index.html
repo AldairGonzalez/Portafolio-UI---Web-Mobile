@@ -12,17 +12,20 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/recent-posts.css">
+    <link rel="stylesheet" href="css/featured-works.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="work.html" class="nav__link text--buttons-pagination-medium-text">Works</a>
-            <a href="blog.html" class="nav__link text--buttons-pagination-medium-text">Blog</a>
-            <a href="#" class="nav__link text--buttons-pagination-medium-text">Contact</a>
+            <a href="work.html" class="nav__link">Works</a>
+            <a href="blog.html" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Contact</a>
             <!-- Botón de menú móvil -->
-            <a href="#" class="nav__link nav__link--icon-only">
+            <a href="#" class="nav__link nav__link--icon-only" aria-label="Open menu" role="button">
                 <div class="menu">
                     <div class="menu__linea"></div>
                     <div class="menu__linea"></div>
@@ -35,136 +38,136 @@
         <!-- Sección HERO -->
         <section class="container container--home container--hero hero">
             <div class="hero__container">
-                <div class="hero__content">
-                    <h1 class="hero__title text--h1">
+                <div class="hero__info">
+                    <h1 class="hero__title">
                         Hi, I am John,<br/>Creative Technologist
                     </h1>
-                    <p class="hero__description text--body-normal-text-regular">
+                    <p class="hero__description">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </p>
                 </div>
                 <div class="hero__image">
                     <div class="hero__image-container">
-                        <div class="hero__image-shadow"></div>
-                        <img src="img/fotoperfil.png" alt="Imagen de Perfíl" class="hero__image-img">
+                        <div class="hero__image-shadow" aria-hidden="true"></div>
+                        <img src="./assets/img/fotoperfil.png" alt="Imagen de Perfíl" aria-label="Imagen de Perfíl" class="hero__image-img" loading="lazy">
                     </div>
                 </div>
             </div>
             <div class="hero__button">
-                <a class="hero__button__link text--buttons-pagination-medium-text" href="./assets/Maestria.pdf" download="Maestria.pdf">Download Resume</a>
+                <a class="hero__button-link" href="./assets/documents/Maestria.pdf" download="Maestria.pdf" aria-label="Descargar currículum">Download Resume</a>
             </div>
         </section>
 
         <!-- Sección RECENT POSTS -->
-         <section class="recent-posts">
+        <section class="recent-posts">
             <div class="container container--home container--recentposts">
-                <div class="recent-posts__header">
+                <header class="recent-posts__header">
                     <h2 class="recent-posts__title">Recent posts</h2>
-                    <a class="recent-posts__viewall recent-posts__viewall--hidden text--body-normal-text-regular" href="#" aria-label="View all posts">View all</a>
-                </div>
+                    <a class="recent-posts__viewall recent-posts__viewall--hidden" href="#" aria-label="View all posts">View all</a>
+                </header>
                 <div class="recent-posts__content">
                     <article class="card-post">
-                        <h5 class="card-post__title text--h5">Making a design system from scratch</h5>
+                        <h3 class="card-post__title">Making a design system from scratch</h3>
                         <div class="card-post__metadata">
-                            <span class="card-post__metadata-text">12 Feb 2020</span>
+                            <time class="card-post__metadata-text" datetime="2020-02-12">12 Feb 2020</time>
                             <span class="card-post__metadata-text">|</span>
                             <span class="card-post__metadata-text">Design, Pattern</span>
                         </div>
-                        <p class="card-post__description text--body-normal-text-regular">
+                        <p class="card-post__description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </article>
                     <article class="card-post">
-                        <h5 class="card-post__title text--h5">Creating pixel perfect icons in Figma</h5>
+                        <h3 class="card-post__title">Creating pixel perfect icons in Figma</h3>
                         <div class="card-post__metadata">
-                            <span class="card-post__metadata-text">12 Feb 2020</span>
+                            <time class="card-post__metadata-text" datetime="2020-02-12">12 Feb 2020</time>
                             <span class="card-post__metadata-text">|</span>
                             <span class="card-post__metadata-text">Figma, Icon Design</span>
                         </div>
-                        <p class="card-post__description text--body-normal-text-regular">
+                        <p class="card-post__description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </article>
                 </div>
             </div>
-         </section>
+        </section>  
 
-         <!-- Sección Featured-Works -->
-          <section class="container container--home container--featured featured">
-            <div class="featured__header">
+        <!-- Sección Featured-Works -->
+        <section class="container container--home container--featured featured">
+            <header class="featured__header">
                 <h2 class="featured__title">Featured works</h2>
-            </div>
+            </header>
             <div class="featured__content">
                 <article class="card">
                     <div class="card__img">
-                        <img src="img/designin_dashboard.png" alt="Imagen de Designing Dashboards">
+                        <img src="assets/img/designin_dashboard.png" alt="Imagen de Designing Dashboards" aria-label="Imagen de Designing Dashboards" loading="lazy">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-header">
+                        <header class="card__content-header">
                             <h3 class="card__content-title">
                                 <a class="card__content-link" href="workdetail.html" title="Learn more about Designing Dashboards">Designing Dashboards</a>
                             </h3>
                             <div class="card__content-metadata">
-                                <span class="card__content-metadata-date text--body-medium-text-black">2020</span>
+                                <span class="card__content-metadata-date">2020</span>
                                 <span class="card__content-metadata-text">Dashboard</span>
                             </div>
-                        </div>
-                        <p class="card__content-description text--body-normal-text-regular">
+                        </header>
+                        <p class="card__content-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </article>
                 <article class="card card--hidden">
                     <div class="card__img">
-                        <img src="img/vibrant.png" alt="Imagen de Vibrant Portraits of 2020">
+                        <img src="assets/img/vibrant.png" alt="Imagen de Vibrant Portraits of 2020" aria-label="Imagen de Vibrant Portraits of 2020" loading="lazy">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-header">
+                        <header class="card__content-header">
                             <h3 class="card__content-title">
                                 <a class="card__content-link" href="#" title="Learn more about Vibrant Portraits of 2020">Vibrant Portraits of 2020</a>
                             </h3>
                             <div class="card__content-metadata">
-                                <span class="card__content-metadata-date text--body-medium-text-black">2018</span>
+                                <span class="card__content-metadata-date">2018</span>
                                 <span class="card__content-metadata-text">Illustration</span>
                             </div>
-                        </div>
-                        <p class="card__content-description text--body-normal-text-regular">
+                        </header>
+                        <p class="card__content-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </article>
                 <article class="card card--hidden">
                     <div class="card__img">
-                        <img src="img/malayalam.png" alt="Imagen de 36 Days of Malayalam type">
+                        <img src="assets/img/malayalam.png" alt="Imagen de 36 Days of Malayalam type" aria-label="Imagen de 36 Days of Malayalam type" loading="lazy">
                     </div>
                     <div class="card__content">
-                        <div class="card__content-header">
+                        <header class="card__content-header">
                             <h3 class="card__content-title">
                                 <a class="card__content-link" href="#" title="Learn more about 36 Days of Malayalam type">36 Days of Malayalam type</a>
                             </h3>
                             <div class="card__content-metadata">
-                                <span class="card__content-metadata-date text--body-medium-text-black">2018</span>
+                                <span class="card__content-metadata-date">2018</span>
                                 <span class="card__content-metadata-text">Typography</span>
                             </div>
-                        </div>
-                        <p class="card__content-description text--body-normal-text-regular">
+                        </header>
+                        <p class="card__content-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </article>
             </div>
-          </section>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__icons">
-                <img src="icons/fb.svg" alt="Ícono de Facebook">
-                <img src="icons/insta.svg" alt="Ícono de Instagram">
-                <img src="icons/Group.svg" alt="Ícono de Twitter">
-                <img src="icons/Linkedin.svg" alt="Ícono de LinkedIn">
+                <img src="icons/fb.svg" alt="Ícono de Facebook" aria-label="Facebook">
+                <img src="icons/insta.svg" alt="Ícono de Instagram" aria-label="Instagram">
+                <img src="icons/Group.svg" alt="Ícono de Twitter" aria-label="Twitter">
+                <img src="icons/Linkedin.svg" alt="Ícono de LinkedIn" aria-label="LinkedIn">
             </div>
             <div class="footer__copyright">
-                <span class="text--body-small-text-regular">Copyright ©2020 All rights reserved</span>
+                <span class="footer__copyright-text">Copyright ©2020 All rights reserved</span>
             </div>
         </div>
     </footer> 
