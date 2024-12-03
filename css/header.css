@@ -1,9 +1,14 @@
 .header{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
     padding: 27px 59px;
     height: 84px;
 }
+
+    .header__icon-home{
+        display: flex;
+        align-items: center;
+    }
 
 .nav{
     display: flex;
