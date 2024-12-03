@@ -85,7 +85,7 @@
         padding: 8.81px 20.18px;
     }
 
-    .hero__button:hover{
+    .hero__button:hover {
         border: 1px solid var(--primary);
         background-color: var(--white);
     }
@@ -98,8 +98,8 @@
             font-size: var(--desktop-buttons-pagination-medium-text-font-size);
             line-height: var(--desktop-buttons-pagination-medium-text-line-height);
         }
-
-        .hero__button-link:hover{
+        
+        .hero__button:hover .hero__button-link {
             color: var(--primary);
         }
 
