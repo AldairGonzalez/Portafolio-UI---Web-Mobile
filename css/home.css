@@ -1,0 +1,8 @@
+:root{
+    --desktop-padding-home-content: 148px;
+}
+
+.container--home{
+    padding-left: var(--desktop-padding-home-content);
+    padding-right: var(--desktop-padding-home-content);
+}

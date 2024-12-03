@@ -1,0 +1,159 @@
+/* ESTOS SON LOS CSS DE LA SECCIÓN DE HERO EN LA PANTALLA HOME */
+
+:root{
+    --mobile-padding-home-recentposts: 11.5px;
+}
+
+.recent-posts{
+    background-color: var(--light-blue);
+    padding-top: 7px;
+    padding-bottom: 32px;
+}
+
+    .recent-posts__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+
+    .recent-posts__title {
+        color: var(--dark);
+        font-weight: var(--desktop-body-large-text-regular-label-font-weight);
+        font-size: var(--desktop-body-large-text-regular-label-font-size);
+        line-height: var(--desktop-body-large-text-regular-label-line-height);
+    }
+
+    .recent-posts__viewall{
+        text-decoration: none;
+        color: var(--secondary);
+        font-weight: var(--desktop-body-normal-text-regular-font-weight);
+        font-size: var(--desktop-body-normal-text-regular-font-size);
+        line-height: var(--desktop-body-normal-text-regular-line-height);
+    }
+
+    .recent-posts__content{
+        display: flex;
+        gap: 20px;
+    }
+
+.card-post{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: var(--white);
+    padding: 30.5px 22px;
+}
+
+    .card-post__title{
+        height: 77px;
+        color: var(--dark);
+        font-weight: var(--desktop-heading-h5-font-weight);
+        font-size: var(--desktop-heading-h5-font-size);
+        line-height: var(--desktop-heading-h5-line-height);
+    }
+
+    .card-post__metadata{
+        display: flex;
+        height: 27px;
+        gap: 28px;
+    }
+
+        .card-post__metadata-text{
+            color: var(--dark);
+            font-weight: var(--desktop-body-medium-text-regular-font-weight);
+            font-size: var(--desktop-body-medium-text-regular-font-size);
+            line-height: var(--desktop-body-medium-text-regular-line-height);
+        }
+
+    .card-post__description{
+        color: var(--dark);
+        font-weight: var(--desktop-body-normal-text-regular-font-weight);
+        font-size: var(--desktop-body-normal-text-regular-font-size);
+        line-height: var(--desktop-body-normal-text-regular-line-height);
+    }
+
+
+@media (max-width: 975px) {
+    .recent-posts__content{
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    .card-post__title{
+        height: auto;
+    }
+}
+
+
+@media (max-width: 615px) {
+    .container--recentposts{
+        padding-left: var(--mobile-padding-home-recentposts);
+        padding-right: var(--mobile-padding-home-recentposts);
+    }
+}
+
+
+@media (max-width: 375px) {
+    .recent-posts{
+        background-color: var(--light-blue);
+        padding-top: 1px;
+        padding-bottom: 37px;
+    }
+
+        .recent-posts__header{
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .recent-posts__title{
+            font-weight: var(--mobile-body-large-text-regular-font-weight);
+            font-size: var(--mobile-body-large-text-regular-font-size);
+            line-height: var(--mobile-body-large-text-regular-line-height);
+        }
+        
+        .recent-posts__viewall{
+            font-weight: var(--mobile-body-normal-text-regular-font-weight);
+            font-size: var(--mobile-body-normal-text-regular-font-size);
+            line-height: var(--mobile-body-normal-text-regular-line-height);
+        }
+
+        .recent-posts__viewall--hidden{
+            display: none;
+        }
+
+        .recent-posts__content{
+            gap: 17px;
+        }
+
+    .card-post{
+        gap: 11px;
+        padding: 21.5px 12.5px;
+    }
+
+        .card-post__title{
+            height: 60px;
+            font-weight: var(--mobile-heading-h5-font-weight);
+            font-size: var(--mobile-heading-h5-font-size);
+            line-height: var(--mobile-heading-h5-line-height);
+        }
+
+        .card-post__metadata{
+            height: 24px;
+            gap: 24px;
+        }
+
+            .card-post__metadata-text{
+                font-weight: var(--mobile-body-normal-text-regular-font-weight);
+                font-size: var(--mobile-body-normal-text-regular-font-size);
+                line-height: var(--mobile-body-normal-text-regular-line-height);
+            }
+
+        .card-post__description{
+            padding-right: 13px;
+            height: 117px;
+            font-weight: var(--mobile-body-normal-text-regular-font-weight);
+            font-size: var(--mobile-body-normal-text-regular-font-size);
+            line-height: var(--mobile-body-normal-text-regular-line-height);
+        }
+}
